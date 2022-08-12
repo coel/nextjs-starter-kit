@@ -1,3 +1,5 @@
+import { Link } from "next/link";
+
 export const LoggedOut = () => {
   return (
     <>
@@ -5,12 +7,12 @@ export const LoggedOut = () => {
         <nav className="nav container">
           <h1 className="text-display-3">KindeAuth</h1>
           <div>
-            <a className="btn btn-ghost sign-in-btn" href="/api/auth/login">
+            <Link className="btn btn-ghost sign-in-btn" href="/api/auth/login">
               Sign in
-            </a>
-            <a className="btn btn-dark" href="/api/auth/register">
+            </Link>
+            <Link className="btn btn-dark" href="/api/auth/register">
               Sign up
-            </a>
+            </Link>
           </div>
         </nav>
       </header>
@@ -19,7 +21,7 @@ export const LoggedOut = () => {
         <div className="container">
           <div className="card hero">
             <p className="text-display-1 hero-title">
-              Let's start authenticating <br /> with KindeAuth
+              Let&lsquo;s start authenticating <br /> with KindeAuth
             </p>
             <p className="text-body-1 hero-tagline">Configure your app</p>
 
